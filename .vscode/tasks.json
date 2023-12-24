@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "format:check",
+      "type": "process",
+      "command": "turbo",
+      "args": ["format:check"],
+      "problemMatcher": [],
+      "icon": { "id": "checklist", "color": "terminal.ansiBlack" }
+    },
+    {
+      "label": "format:write",
+      "type": "process",
+      "command": "turbo",
+      "args": ["format:write"],
+      "problemMatcher": [],
+      "icon": { "id": "debug-restart-frame", "color": "terminal.ansiBlack" }
+    }
+  ]
+}
