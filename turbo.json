@@ -3,8 +3,13 @@
   "pipeline": {
     "//#format:check": {},
     "//#format:write": {},
-    "build": { "dependsOn": ["lint", "typecheck"] },
+    "//#lint": { "dependsOn": ["^build"] },
     "lint": { "dependsOn": ["^build"] },
-    "typecheck": { "dependsOn": ["^build"] }
+    "//#typecheck": { "dependsOn": ["^build"] },
+    "typecheck": { "dependsOn": ["^build"] },
+    "build": {
+      "dependsOn": ["lint", "typecheck"],
+      "outputs": [".build/**"]
+    }
   }
 }

@@ -3,7 +3,7 @@
   "tasks": [
     {
       "label": "format:check",
-      "icon": { "id": "whole-word", "color": "terminal.ansiBlack" },
+      "icon": { "id": "whole-word" },
       "type": "process",
       "command": "turbo",
       "args": ["format:check"],
@@ -11,15 +11,31 @@
     },
     {
       "label": "format:write",
-      "icon": { "id": "replace-all", "color": "terminal.ansiBlack" },
+      "icon": { "id": "replace-all" },
       "type": "process",
       "command": "turbo",
       "args": ["format:write"],
       "problemMatcher": []
     },
     {
+      "label": "lint",
+      "icon": { "id": "debug" },
+      "type": "process",
+      "command": "turbo",
+      "args": ["lint"],
+      "problemMatcher": []
+    },
+    {
+      "label": "typecheck",
+      "icon": { "id": "symbol-type-parameter" },
+      "type": "process",
+      "command": "turbo",
+      "args": ["typecheck"],
+      "problemMatcher": []
+    },
+    {
       "label": "build",
-      "icon": { "id": "tools", "color": "terminal.ansiBlack" },
+      "icon": { "id": "tools" },
       "isBuildCommand": true,
       "group": { "kind": "build", "isDefault": true },
       "type": "process",
@@ -28,28 +44,21 @@
       "problemMatcher": []
     },
     {
-      "label": "lint",
-      "icon": { "id": "debug", "color": "terminal.ansiBlack" },
-      "type": "process",
-      "command": "turbo",
-      "args": ["lint"],
-      "problemMatcher": []
-    },
-    {
-      "label": "typecheck",
-      "icon": { "id": "symbol-type-parameter", "color": "terminal.ansiBlack" },
-      "type": "process",
-      "command": "turbo",
-      "args": ["typecheck"],
-      "problemMatcher": []
-    },
-    {
       "label": "publish",
-      "icon": { "id": "cloud-upload", "color": "terminal.ansiBlack" },
+      "icon": { "id": "cloud-upload" },
       "dependsOn": ["build"],
       "type": "process",
       "command": "pnpm",
       "args": ["-r", "publish"],
+      "problemMatcher": []
+    },
+    {
+      "label": "generate",
+      "icon": { "id": "zap" },
+      "presentation": { "focus": true },
+      "type": "process",
+      "command": "turbo",
+      "args": ["gen"],
       "problemMatcher": []
     }
   ]

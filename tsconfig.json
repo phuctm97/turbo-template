@@ -1,0 +1,4 @@
+{
+  "extends": "./node_modules/tsconfig/tsconfig.json",
+  "exclude": ["apps/*", "packages/*"]
+}
