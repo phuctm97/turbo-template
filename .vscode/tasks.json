@@ -32,7 +32,7 @@
       "group": { "kind": "build", "isDefault": true },
       "type": "process",
       "command": "turbo",
-      "args": ["build"],
+      "args": ["format", "typecheck", "lint", "build"],
       "problemMatcher": []
     },
     {
