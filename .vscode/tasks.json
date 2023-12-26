@@ -18,19 +18,19 @@
       "problemMatcher": []
     },
     {
-      "label": "lint",
-      "icon": { "id": "debug" },
-      "type": "process",
-      "command": "turbo",
-      "args": ["lint"],
-      "problemMatcher": []
-    },
-    {
       "label": "typecheck",
       "icon": { "id": "symbol-type-parameter" },
       "type": "process",
       "command": "turbo",
       "args": ["typecheck"],
+      "problemMatcher": []
+    },
+    {
+      "label": "lint",
+      "icon": { "id": "debug" },
+      "type": "process",
+      "command": "turbo",
+      "args": ["lint"],
       "problemMatcher": []
     },
     {

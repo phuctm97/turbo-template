@@ -8,7 +8,7 @@ Create a [Turbo] monorepo
 
 - [pnpm] `>=8`
 
-- [Turbo](https://turbo.build/repo/docs/installing#install-globally)
+- [Turborepo] ([installed globally](https://turbo.build/repo/docs/installing#install-globally))
 
 - [Visual Studio Code]
 
@@ -16,23 +16,57 @@ Create a [Turbo] monorepo
 
 - First-class TypeScript, JavaScript ESM, and CJS support
 
+- Format code with [Prettier] (and [Prettier plugins])
+
+  ```sh
+  turbo format
+  ```
+
+- Typecheck code in TypeScript
+
+  ```sh
+  turbo typecheck
+  ```
+
 - Lint code with [ESLint], automatically detect TypeScript, JavaScript ESM, and CJS modules
 
-- Format code with [Prettier]
+  ```sh
+  turbo lint
+  ```
 
-- Generate code with [Turbo] code generators (in TypeScript)
+- Build code with any tools ([Next.js], [Vite], [Rollup], [tsup], [esbuild], etc.)
 
-- Build, lint, and typecheck code with [Turbo] pipeline
+  ```sh
+  turbo build
+  ```
+
+- Format, typecheck, lint, and build code with [Turborepo] pipeline
+
+  ```sh
+  turbo format typecheck lint build
+  ```
 
 - Publish npm packages with [pnpm]
 
+  ```sh
+  pnpm -r publish
+  ```
+
+- Generate code with [Turborepo] generators (in TypeScript)
+
+  ```sh
+  turbo gen
+  ```
+
 - Best-in-class [Visual Studio Code] integration
 
-  - UI to run build, lint, typecheck, generate, and publish tasks
+  - UI to run format, typecheck, lint, build, publish, and generate tasks
+
+  - Work flawlessly with TypeScript, ESLint, and Prettier
 
   - Debug code with breakpoints
 
-  - Auto fix/format code on save
+  - Fix and format code automatically
 
   - Use workspace TypeScript version
 
@@ -65,6 +99,13 @@ Create a [Turbo] monorepo
 [visual studio code]: https://code.visualstudio.com/
 [node.js]: https://nodejs.org/
 [turbo]: https://turbo.build
+[turborepo]: https://turbo.build/repo
 [pnpm]: https://pnpm.io
-[prettier]: https://prettier.io
 [eslint]: https://eslint.org
+[prettier]: https://prettier.io
+[prettier plugins]: https://prettier.io/docs/en/plugins.html
+[next.js]: https://nextjs.org
+[vite]: https://vitejs.dev
+[rollup]: https://rollupjs.org
+[tsup]: https://tsup.egoist.dev
+[esbuild]: https://esbuild.github.io
