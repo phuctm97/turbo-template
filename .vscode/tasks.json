@@ -2,19 +2,11 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "format:check",
-      "icon": { "id": "whole-word" },
-      "type": "process",
-      "command": "turbo",
-      "args": ["format:check"],
-      "problemMatcher": []
-    },
-    {
-      "label": "format:write",
+      "label": "format",
       "icon": { "id": "replace-all" },
       "type": "process",
       "command": "turbo",
-      "args": ["format:write"],
+      "args": ["format"],
       "problemMatcher": []
     },
     {
