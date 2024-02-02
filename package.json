@@ -5,14 +5,14 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@turbo/gen": "^1.11.2",
-    "@types/node": "^20.10.5",
+    "@turbo/gen": "^1.12.2",
+    "@types/node": "^20.11.16",
     "eslint": "^8.56.0",
     "eslint-config-node": "workspace:^",
-    "prettier": "^3.1.1",
-    "prettier-plugin-packagejson": "^2.4.7",
+    "prettier": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.10",
     "tsconfig": "workspace:^",
-    "turbo": "^1.11.2",
+    "turbo": "^1.12.2",
     "typescript": "^5.3.3"
   }
 }
